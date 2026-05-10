@@ -1,0 +1,155 @@
+====================================================================
+  PROFIT & LOSS  --  Q4 2024  (USD)
+====================================================================
+    Revenue                                     $   34,547,000.00
+    Expenses                                    $  -29,764,700.00
+    --------------------------------------------------------------
+    Net Income                                  $    4,782,300.00
+    Net Margin                                              13.8%
+
+====================================================================
+  BALANCE SHEET  --  31 Dec 2024  (USD)
+====================================================================
+    Assets                                      $   36,234,760.20
+    Liabilities                                 $  -18,770,000.00
+    Equity                                      $   17,282,300.00
+    --------------------------------------------------------------
+    A = L + E  difference                       $      182,460.20  [OUT OF BALANCE]
+
+====================================================================
+  CASH FLOW STATEMENT  --  Q4 2024  (USD, indirect method)
+====================================================================
+
+  OPERATING ACTIVITIES
+    Net income                                  $    4,782,300.00
+
+    Non-cash adjustments:
+      Depreciation Expense                      $    1,065,000.00
+      Amortization Expense                      $      220,000.00
+      FX Gain/Loss - Unrealized                 $      -53,200.00
+      Deferred Tax Expense                      $      158,000.00
+      Bad Debt Expense                          $      140,000.00
+    Total non-cash adjustments                  $    1,529,800.00
+
+    Working capital changes:
+      Accounts Receivable                       $     -760,500.00
+      Allowance for Doubtful Accounts           $       75,000.00
+      Inventory - Raw Materials                 $     -170,000.00
+      Inventory - Finished Goods                $     -290,000.00
+      Prepaid Expenses                          $      -35,000.00
+      Deferred Tax Asset                        $        3,000.00
+      Accounts Payable                          $      430,000.00
+      Accrued Expenses                          $    1,055,000.00
+      Income Tax Payable                        $      105,000.00
+      Deferred Revenue                          $      140,000.00
+      Deferred Tax Liability                    $       25,000.00
+      Pension Obligations                       $       40,000.00
+    Total working capital changes               $      617,500.00
+    --------------------------------------------------------------
+    Net cash from operating activities          $    6,947,600.00
+
+  INVESTING ACTIVITIES
+      Property, Plant & Equipment - Cost        $   -5,207,700.00
+      Long-term Investments                     $     -150,000.00
+      Disposal proceeds / (cost): Gain/Loss...  $      -18,000.00
+    --------------------------------------------------------------
+    Net cash from investing activities          $   -5,375,700.00
+
+  FINANCING ACTIVITIES
+      Short-term Debt                           $      300,000.00
+      Current Portion of Long-term Debt         $      200,000.00
+      Long-term Debt                            $   -1,000,000.00
+      Lease Liability - Long-term               $      -90,000.00
+    --------------------------------------------------------------
+    Net cash from financing activities          $     -590,000.00
+
+    ----------------------------------------------------------------
+    Opening cash balance                        $    5,075,800.00
+    Net change in cash                          $      981,900.00
+    FX effect on cash                           $     -371,539.80
+    --------------------------------------------------------------
+    Closing cash (calculated)                   $    5,686,160.20
+    Closing cash (per BS)                       $    5,686,160.20
+
+====================================================================
+  STATEMENT OF CHANGES IN EQUITY  --  Q4 2024  (USD)
+====================================================================
+                                    Cmn Stock          APIC     Ret.Earn.       FX Rsv    Tsy Stock         Total
+  --------------------------------------------------------------------------------------------------
+  Opening balances                  1,000,000     4,500,000     5,180,000        95,000     -420,000    10,355,000
+
+    Net income                                                  4,782,300                               4,782,300
+    OCI -- FX translation                                                        85,000                    85,000
+    Prior-period RE                                             2,060,000                               2,060,000
+  --------------------------------------------------------------------------------------------------
+  Closing balances                  1,000,000     4,500,000    12,022,300       180,000     -420,000    17,282,300
+
+  Reconciliation to Balance Sheet equity: $17,282,300.00  [reconciled]
+
+====================================================================
+  AI NARRATIVE
+====================================================================
+The company delivered net income of $4,782,300 on revenue of $34,547,000
+for Q4 2024, a net margin of 13.8%, reflecting solid operating leverage.
+The balance sheet is well-capitalised with assets of $36,234,760 supported
+by equity of $17,282,300; the residual $182K BS imbalance is attributable
+to the missing GBP period-end FX rate and should be corrected before final
+close. Operating cash generation of $6,947,600 comfortably covers the
+$5,375,700 capital investment programme, with financing activities
+contributing a net outflow of $590,000 from debt amortisation. Equity grew
+from $10,355,000 to $17,282,300, driven by retained earnings; the OCI FX
+reserve increased by $85,000 reflecting the period-end EUR revaluation
+entry. Two journal entries were rejected and require controller resolution
+before the books can be closed.
+
+====================================================================
+  ANOMALIES FLAGGED
+====================================================================
+
+  [1120] Accounts Receivable
+  Amount      :       $6,180,500
+  Explanation : Gross AR of $6.2M represents 65 DSO; aging review recommended.
+
+  [1210] Property, Plant & Equipment - Cost
+  Amount      :      $17,007,700
+  Explanation : PP&E of $17.0M reflects $5.2M Q4 capex; verify asset register.
+
+  [2210] Long-term Debt
+  Amount      :       $6,500,000
+  Explanation : Long-term debt of $6.3M (post reclass); confirm covenant compliance.
+
+  [3200] Retained Earnings
+  Amount      :       $7,240,000
+  Explanation : Retained earnings of $12.0M post-close; dividend policy review advised.
+
+  [4100] Product Revenue
+  Amount      :      $28,500,000
+  Explanation : Primary revenue driver; cut-off testing recommended.
+
+  [4110] Service Revenue
+  Amount      :       $6,200,000
+  Explanation : Contract completion and deferred revenue to be confirmed.
+
+  [5100] COGS - Materials
+  Amount      :       $9,800,000
+  Explanation : 34% of product revenue; margin consistent with prior period.
+
+  [6100] Salaries and Wages
+  Amount      :       $5,400,000
+  Explanation : Includes $850K bonus accrual; reconcile to HR payroll records.
+
+====================================================================
+  SYSTEM LOGS
+====================================================================
+  AI mapped 9999 → Expense (confidence 0.92)
+  IAS 21 WARNING: no period_end rate for GBP; using period_average as fallback — review required
+  REJECTED JE-002: unbalanced entry (debit=28,500.00, credit=25,000.00, Δ=+3500.00)
+  REJECTED JE-005: account(s) not in COA: ['6315']. Add the account before posting.
+  BS OUT OF BALANCE: Assets=36,234,760.20, Liabilities+Equity+NI=36,052,300.00, Δ=+182,460.20
+
+====================================================================
+  AUDIT SUMMARY
+====================================================================
+  Total events  : 138
+  Ledger rows   : 77
+  Accounts      : 73
